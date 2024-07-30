@@ -118,3 +118,13 @@ The API documentation is available at:
  ## Running Tests
         To run tests, use the following command:
         npm test
+
+## Environment Variables
+
+You need to create a `.env` file in the root directory of the project with the following variables:
+
+- `MONGO_CONNECT`: The URL to your MongoDB instance, which could be Mongo Atlas or Compass.
+- `PORT`: The port where the server will run.
+- `SECRET_KEY`: The key you want to use with JWT for token generation.
+
+You can find an example of this configuration in the file `.env.example`.
