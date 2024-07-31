@@ -6,6 +6,10 @@ import userController from '../controller/user.controller.js'
 
 const router = express.Router()
 
+router.get('/', (req, res, next) => {
+    return res.send('Welcome to the API of users.')
+})
+
 router.post('/signup', userController.signUp)
 
 router.post('/login', generateToken, userController.login)
